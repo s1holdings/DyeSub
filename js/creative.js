@@ -3,9 +3,19 @@
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $(document).on('click', 'a.page-scroll', function(event) {
+        console.log("yep");
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: ($($anchor.attr('href')).offset().top - 50)
+        }, 1250, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
+    $(document).on('click', 'a.tablink', function(event) {
+        //alert("yep");
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href')).offset().top - 250)
         }, 1250, 'easeInOutExpo');
         event.preventDefault();
     });
