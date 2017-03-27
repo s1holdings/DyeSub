@@ -69,8 +69,8 @@
                         <div class="dropdown">
                             <a href="#"" data-toggle="dropdown" class="dropdown-toggle">Products<b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#ep">Epson Printers</a></li>
-                                <li><a href="#ei" class="page-scroll">Epson Inks</a></li>
+                                <li><a href="#ep" class="tablink">Epson Printers</a></li>
+                                <li><a href="#ei" class="tablink">Epson Inks</a></li>
                             </ul>
                         </div>
                         <!-- <a class="page-scroll" href="#products">Products</a> -->
@@ -644,10 +644,6 @@
     </section>
 
     <div id="dialog"></div>
-
-    <!-- jQuery 
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>-->
     
 
     <!-- Bootstrap Core JavaScript -->
@@ -660,10 +656,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <!-- <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script> -->
 
     <!-- Theme JavaScript -->
-    <script src="js/creative.min.js"></script>
+    <script src="js/creative.js"></script>
     <script type="text/javascript">
       jQuery(document).ready(function($){
         var body = $( 'body' );
@@ -678,19 +673,36 @@
             modal : true,
         });
 
-
-
         $("#dialog_trigger").click( function() {
-              //alert('hi!');
             $("#dialog").load('contact.html', function() {
                 $("#dialog").dialog("open");
                 $('button.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-icon-only.ui-dialog-titlebar-close').blur();
             });
         });
+
+        $("a[rel^='prettyPhoto']").prettyPhoto();
+        
+        $(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
+        $(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
+    
+        $("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
+          custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',
+          changepicturecallback: function(){ initialize(); }
+        });
+
+        $("#custom_content a[rel^='prettyPhoto']:last").prettyPhoto({
+          custom_markup: '<div id="bsap_1259344" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div><div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1251710" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
+          changepicturecallback: function(){ _bsap.exec(); }
+        });
+
+        $(".tablink").click(function () {
+          $('.nav a[href="' +  $(this).attr("href") + '"]').tab('show');          
+        });
+
       });
     </script>
 
-    <!-- Pretty Photo Initialization JavaScript -->
+    <!-- Pretty Photo Initialization JavaScript 
     <script type="text/javascript" charset="utf-8">
       $(document).ready(function(){
         $("a[rel^='prettyPhoto']").prettyPhoto();
@@ -708,7 +720,7 @@
           changepicturecallback: function(){ _bsap.exec(); }
         });
       });
-      </script>
+      </script>-->
 
 </body>
 
