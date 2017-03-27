@@ -453,7 +453,8 @@ a.dropdown-toggle {
   top: 46px;
 }
 .dropdown-menu>.active>a {
-  background-color: #57c4d6;
+  background-color: transparent;
+  color: #333;
 }
 .formcomment {
   height: 100px;
