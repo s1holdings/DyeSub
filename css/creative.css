@@ -477,7 +477,7 @@ hr {
 .nav .open>a, .nav .open>a:hover {
   background-color: transparent !important;
 }
-.navbar-default .nav > li.active > a, .bluetext {
+.navbar-default .nav > li.active > a, .bluetext, .navbar-default .navbar-header .navbar-brand {
   color: #57c4d6 !important;
 }
 .navbar-default.affix .nav > li > a:hover, .navbar-default.affix .nav > li > a:focus:hover {
@@ -488,6 +488,9 @@ hr {
 }
 .nomarg {
   margin: 0;
+}
+.nowrap {
+  white-space: nowrap;
 }
 p {
   color: #fff !important;
@@ -525,9 +528,10 @@ table {
 td {
   border-right: 1px solid #ccc;
   padding: 10px 10px 5px 5px;
-  /*vertical-align: top;*/
+  vertical-align: top;
 }
 td:nth-child(1) {
+  border: 1px solid #ccc;
   white-space: nowrap;
 }
 td:nth-child(4); th:nth-child(4) {
@@ -540,6 +544,9 @@ th {
 }
 tr:nth-child(odd) {
   background-color: #e2e2e2;
+}
+tr:last-child {
+  border: 1px solid #ccc;
 }
 .visible-xs {
   display: none;
@@ -605,6 +612,9 @@ tr:nth-child(odd) {
   }*/
 }
 @media (max-width: 767px) {
+  a.dropdown-toggle {
+    color: #222 !important;
+  }
   ul.nav.navbar-nav.navbar-right {
     height: 260px;
   }
