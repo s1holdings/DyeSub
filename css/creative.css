@@ -615,6 +615,13 @@ tr:last-child {
   a.dropdown-toggle {
     color: #222 !important;
   }
+  a.navbar-brand.page-scroll {
+    padding-top: 0;
+    text-align: center;
+  }
+  .nowrap, td:nth-child(1) {
+    white-space: normal;
+  }
   ul.nav.navbar-nav.navbar-right {
     height: 260px;
   }
