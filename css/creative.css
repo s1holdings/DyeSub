@@ -606,10 +606,6 @@ tr:last-child {
   header .header-content .header-content-inner p {
     max-width: 90% !important;
   }
-  /*.lastcell {
-    border-left: 1px solid #ccc;
-    width: 25%;
-  }*/
 }
 @media (max-width: 767px) {
   a.dropdown-toggle {
@@ -623,23 +619,15 @@ tr:last-child {
     white-space: normal;
   }
   ul.nav.navbar-nav.navbar-right {
-    height: 260px;
+    height: 240px;
+  }
+  ul.nav.navbar-nav.navbar-right > li:nth-of-type(4) {
+    top: 1px;
   }
   ul.nav.navbar-nav.navbar-right > li:nth-of-type(5) {
-    top: 30px;
+    top: 2px;
   }
   ul.nav.navbar-nav.navbar-right > li:nth-of-type(6) {
-    top: 35px;
+    top: 3px;
   }
-  /*.visible-xs {
-      display: table-row;
-  }
-
-  .visible-xs > td:nth-child(2) {
-    background-color: #fff;
-  }
-  td:first-child,
-  th:first-child {
-    display: none;
-  }*/
 }
