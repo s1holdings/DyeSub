@@ -440,6 +440,12 @@ a.dropdown-toggle {
 .btn-primary:hover {
   background-color: #3b8591 !important;
 }
+.cleardiv {
+  clear: both;
+}
+.clearrow {
+  margin-bottom: 30px;
+}
 .fahid {
   visibility: hidden;
 }
@@ -470,6 +476,9 @@ a.dropdown-toggle {
 hr {
   border-color: #fff !important;
 }
+.left {
+  float: left;
+}
 .nav .open>a {
   text-decoration: underline;
   border-color: transparent !important;
@@ -494,6 +503,9 @@ hr {
 }
 p {
   color: #fff !important;
+}
+.picpad {
+  margin-top: 26px;
 }
 .tab-pane > img {
   display: block;
@@ -532,7 +544,6 @@ td {
 }
 td:nth-child(1) {
   border: 1px solid #ccc;
-  white-space: nowrap;
 }
 td:nth-child(4); th:nth-child(4) {
   border-right: none;
@@ -573,6 +584,9 @@ tr:last-child {
   }
   .benboxcell:nth-of-type(2) {
     border-right: none;
+  }
+  td:nth-child(2) {
+    width: 40%;
   }
 }
 @media (max-width: 991px) {
