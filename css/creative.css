@@ -560,6 +560,29 @@ tr:nth-child(odd) {
 tr:last-child {
   border: 1px solid #ccc;
 }
+.videocont{
+  position: relative;
+  width: 300px;
+}
+.ytpic {
+  width: 300px;
+}
+.videocont .play-icon {
+  cursor: pointer;
+  position: absolute;
+  top : 50%;
+  left : 50%;
+  width: 60px;
+  height: 41px;
+  background-image: url('../img/ytbut.png');
+  transform: translate(-50%, -50%);
+}
+.videocont .play-icon:hover {
+  background-image: url('../img/ytbut-hover.png');
+}
+svg:hover #play-svg1 {
+  fill: #CC181E;
+}
 .visible-xs {
   display: none;
 }
