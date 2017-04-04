@@ -150,12 +150,13 @@ header {
   position: relative;
   width: 100%;
   min-height: auto;
-  /*-webkit-background-size: cover;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover;*/
+  -o-background-size: cover;
   background-position: center;
-  /*background-image: url('../img/header.jpg');*/
+  /*background-image: url('../img/header.jpg');dreamstime_l_26061050.jpg*/ 
+  background-image: url('../img/dreamstime_2.jpg');
   background-color: #000;
   text-align: center;
   color: white;
@@ -492,9 +493,14 @@ hr {
 }
 .navbar-default.affix .nav > li > a:hover, .navbar-default.affix .nav > li > a:focus:hover {
   color: #3b8591 !important;
+  text-shadow: none;
+}
+.navbar-default .nav > li.active > a {
+  text-shadow: none;
 }
 .navbar-default.affix .navbar-header .navbar-brand {
   color: #57c4d6 !important;
+  text-shadow: none;
 }
 .nomarg {
   margin: 0;
@@ -649,6 +655,12 @@ svg:hover #play-svg1 {
   }
   header .header-content .header-content-inner p {
     max-width: 90% !important;
+  }
+  header .header-content .header-content-inner, .navbar-default .navbar-nav>li>a, .navbar-default .navbar-header .navbar-brand  {
+    text-shadow: 2px 2px #000;
+  }
+  .navbar-default .navbar-nav>li>a {
+    text-shadow: none;
   }
 }
 @media (max-width: 767px) {
