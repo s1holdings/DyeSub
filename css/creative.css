@@ -451,15 +451,16 @@ a.dropdown-toggle {
 .clearrow {
   margin-bottom: 30px;
 }
-.equal{
-  height: 340px;
+/*.equal{
+  height: 370px;
+  margin: 10px 0;
 }
-.supvideocont, .panel{
+.panel{
   height:100%;
 } 
 .supvideocont {
-  margin: 10px 0;
-}
+  height: 350px;
+}*/
 .fahid {
   visibility: hidden;
 }
@@ -589,9 +590,9 @@ tr:last-child {
   position: relative;
   width: 300px;
 }
-.ytpic {
+/*.ytpic {
   max-width: 288px;
-}
+}*/
 .videocont .play-icon {
   cursor: pointer;
   position: absolute;
@@ -614,6 +615,18 @@ svg:hover #play-svg1 {
 .whitelink {
   color: #fff;
   text-decoration: none;
+}
+@media (min-width: 1200px) {
+  .equal {
+  height: 370px;
+  margin: 10px 0;
+  }
+  .panel {
+    height:100%;
+  } 
+  .supvideocont {
+    height: 350px;
+  }
 }
 @media (min-width: 992px) {
   .benbox {
@@ -692,6 +705,9 @@ svg:hover #play-svg1 {
   }
   .nowrap, td:nth-child(1) {
     white-space: normal;
+  }
+  section#contact {
+    text-align: center
   }
   ul.nav.navbar-nav.navbar-right {
     height: 240px;
