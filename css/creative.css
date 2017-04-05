@@ -433,6 +433,9 @@ a.dropdown-toggle {
 .benefits2 {
   padding: 40px 0;
 }
+.benleft img {
+  width: 320px;
+}
 .bg-primary, .btn-primary {
   background-color: #57c4d6 !important;
 }
@@ -447,6 +450,15 @@ a.dropdown-toggle {
 }
 .clearrow {
   margin-bottom: 30px;
+}
+.equal{
+  height: 340px;
+}
+.supvideocont, .panel{
+  height:100%;
+} 
+.supvideocont {
+  margin: 10px 0;
 }
 .fahid {
   visibility: hidden;
@@ -511,6 +523,9 @@ hr {
 p {
   color: #fff !important;
 }
+.panel-default {
+  border: 1px solid #ededed !important;
+}
 .picpad {
   margin-top: 26px;
 }
@@ -519,7 +534,7 @@ p {
   margin: 0 auto;
 }
 th {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   height: 100%;
   line-height: 100%; 
@@ -536,6 +551,9 @@ section#benefits {
 .smallmarg {
   margin: 5px 0 20px;
 } 
+/*.supvideocont {
+  border: 1px solid #ededed;
+}*/
 .tab-content {
   padding: 10px 20px;
 }
@@ -567,11 +585,12 @@ tr:last-child {
   border: 1px solid #ccc;
 }
 .videocont{
+  margin: 0 auto;
   position: relative;
   width: 300px;
 }
 .ytpic {
-  width: 300px;
+  max-width: 288px;
 }
 .videocont .play-icon {
   cursor: pointer;
