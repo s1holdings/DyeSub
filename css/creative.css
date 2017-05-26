@@ -457,16 +457,6 @@ a.dropdown-toggle {
 .contactsubdiv {
   font-size: 18px
 }
-/*.equal{
-  height: 370px;
-  margin: 10px 0;
-}
-.panel{
-  height:100%;
-} 
-.supvideocont {
-  height: 350px;
-}*/
 .fahid {
   visibility: hidden;
 }
@@ -558,9 +548,6 @@ section#benefits {
 .smallmarg {
   margin: 5px 0 20px;
 } 
-/*.supvideocont {
-  border: 1px solid #ededed;
-}*/
 .tab-content {
   padding: 10px 20px;
 }
@@ -599,9 +586,6 @@ tr:last-child {
   margin: 0 auto;
   position: relative;
 }
-/*.ytpic {
-  max-width: 288px;
-}*/
 .videocont .play-icon {
   cursor: pointer;
   position: absolute;
@@ -624,6 +608,9 @@ svg:hover #play-svg1 {
 .whitelink {
   color: #fff;
   text-decoration: none;
+}
+.widetabs {
+  margin: 0 50px;
 }
 @media (min-width: 1200px) {
   .equal {
