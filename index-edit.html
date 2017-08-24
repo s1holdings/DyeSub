@@ -65,7 +65,7 @@
                         <div class="dropdown">
                             <a href="#" data-toggle="dropdown" class="dropdown-toggle">Products<b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#ep" class="tablink">Printers</a></li>
+                                <li><a href="#ep" class="tablink page-scroll" href="#products">Printers</a></li>
                                 <li><a href="#ei" class="tablink">Inks</a></li>
                                 <li><a href="#edsp" class="tablink">Papers</a></li>
                                 <li><a href="#clp" class="tablink">Photo Panels</a></li>
@@ -620,17 +620,17 @@
           // console.log('tab clicked');      
         //}); 
 
-        $(document).on('click', 'a.smtablink', function(event) {
-          var $anchor = $(this);
-          $('html, body').stop().animate({
-              scrollTop: ($($anchor.attr('href')).offset().top - 250)
-          }, 1250, 'easeInOutExpo');
-          $('.nav a[href="' +  $(this).attr("href") + '"]').tab('show');    
-          $('.navbar-collapse.collapse').removeClass('in');
-          $('button.navbar-toggle').addClass('collapsed');
-          console.log('tab clicked');  
-          event.preventDefault();
-      });
+      //   $(document).on('click', 'a.smtablink', function(event) {
+      //     var $anchor = $(this);
+      //     $('html, body').stop().animate({
+      //         scrollTop: ($($anchor.attr('href')).offset().top - 250)
+      //     }, 1250, 'easeInOutExpo');
+      //     $('.nav a[href="' +  $(this).attr("href") + '"]').tab('show');    
+      //     $('.navbar-collapse.collapse').removeClass('in');
+      //     $('button.navbar-toggle').addClass('collapsed');
+      //     console.log('tab clicked');  
+      //     event.preventDefault();
+      // });
 
         function checkWidth() {
           var windowsize = $(window).width();
