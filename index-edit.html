@@ -65,11 +65,11 @@
                         <div class="dropdown">
                             <a href="#" data-toggle="dropdown" class="dropdown-toggle">Products<b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#ep" class="tablink page-scroll" href="#products">Printers</a></li>
-                                <li><a href="#ei" class="tablink">Inks</a></li>
-                                <li><a href="#edsp" class="tablink">Papers</a></li>
-                                <li><a href="#clp" class="tablink">Photo Panels</a></li>
-                                 <li><a href="#gkhp" class="tablink">Heat Presses</a></li>
+                                <li><a title="#ep" class="tablink page-scroll" href="#products">Printers</a></li>
+                                <li><a title="#ei" class="tablink page-scroll" href="#products">Inks</a></li>
+                                <li><a title="#edsp" class="tablink page-scroll" href="#products">Papers</a></li>
+                                <li><a title="#clp" class="tablink page-scroll" href="#products">Photo Panels</a></li>
+                                 <li><a title="#gkhp" class="tablink page-scroll" href="#products">Heat Presses</a></li>
                             </ul>
                         </div>
                     </li>
@@ -93,7 +93,7 @@
                 <h2>Products, service and support for printing fabric, photo panels, soft signage, d‌&#233;cor &amp; more</h2>
                 <hr class="headerhr">
                 <p>
-                <a href="#ep" class="headlink">Printers</a> &#8226; <a href="#ei" class="headlink">Inks</a> &#8226; <a href="#edsp" class="headlink">Papers</a> &#8226; <a href="#clp" class="headlink">Photo Panels</a> &#8226; Software</p>
+                <a title="#ep" class="headlink page-scroll" href="#products">Printers</a> &#8226; <a href="#ei" class="headlink">Inks</a> &#8226; <a href="#edsp" class="headlink">Papers</a> &#8226; <a href="#clp" class="headlink">Photo Panels</a> &#8226; Software</p>
             </div>
         </div>
     </header>
@@ -611,26 +611,8 @@
         });
 
         $('.tablink, .headlink').on('click', function(e) { 
-          $('.nav a[href="' +  $(this).attr("href") + '"]').tab('show');      
+          $('.nav a[href="' +  $(this).attr("title") + '"]').tab('show');      
         }); 
-
-        //$('.smtablink').on('click', function(e) { 
-          // $('.nav a[href="' +  $(this).attr("href") + '"]').tab('show');    
-          // $('button.navbar-toggle').addClass('collapsed');
-          // console.log('tab clicked');      
-        //}); 
-
-      //   $(document).on('click', 'a.smtablink', function(event) {
-      //     var $anchor = $(this);
-      //     $('html, body').stop().animate({
-      //         scrollTop: ($($anchor.attr('href')).offset().top - 250)
-      //     }, 1250, 'easeInOutExpo');
-      //     $('.nav a[href="' +  $(this).attr("href") + '"]').tab('show');    
-      //     $('.navbar-collapse.collapse').removeClass('in');
-      //     $('button.navbar-toggle').addClass('collapsed');
-      //     console.log('tab clicked');  
-      //     event.preventDefault();
-      // });
 
         function checkWidth() {
           var windowsize = $(window).width();
