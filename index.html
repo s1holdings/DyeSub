@@ -588,30 +588,30 @@
             modal : true,
         });
 
-        // $("#dialog_trigger").click( function() {
-        //     $("#dialog").load('contact.html', function() {
-        //         $("#dialog").dialog("open");
-        //         $('button.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-icon-only.ui-dialog-titlebar-close').blur();
-        //     });
-        // });
+        $("#dialog_trigger").click( function() {
+            $("#dialog").load('contact.html', function() {
+                $("#dialog").dialog("open");
+                $('button.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-icon-only.ui-dialog-titlebar-close').blur();
+            });
+        });
 
-        // $("a[rel^='prettyPhoto']").prettyPhoto();
+        $("a[rel^='prettyPhoto']").prettyPhoto();
         
-        // $(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
-        // $(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
+        $(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
+        $(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
     
-        // $("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
-        //   custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',
-        //   changepicturecallback: function(){ initialize(); }
-        // });
+        $("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
+          custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',
+          changepicturecallback: function(){ initialize(); }
+        });
 
-        // $("#custom_content a[rel^='prettyPhoto']:last").prettyPhoto({
-        //   custom_markup: '<div id="bsap_1259344" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div><div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1251710" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
-        //   changepicturecallback: function(){ _bsap.exec(); }
-        // });
+        $("#custom_content a[rel^='prettyPhoto']:last").prettyPhoto({
+          custom_markup: '<div id="bsap_1259344" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div><div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1251710" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
+          changepicturecallback: function(){ _bsap.exec(); }
+        });
 
-        $('.tablink, .headlink').on('click', function(e) { 
-          $('.nav a[href="' +  $(this).attr("title") + '"]').tab('show');      
+        $('.tablink').on('click', function(e) { 
+          $('.nav a[href="' +  $(this).attr("href") + '"]').tab('show');      
         }); 
 
         function checkWidth() {
